@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Vista.HistoriaClinicaFragment">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent=".1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent=".9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="ACTUALIZAR HISTORIA CLINICA"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.503"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtPaciente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Paciente: MOLINA MENDEZ, AXEL"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="12dp"
+                    android:background="#424242"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtPaciente">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="4"
+                        android:gravity="center"
+                        android:text="FECHA" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="35dp"
+                        android:background="#fff" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="4"
+                        android:gravity="center"
+                        android:text="N. HISTORIA" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="35dp"
+                        android:background="#fff" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="4"
+                        android:gravity="center"
+                        android:text="N. CUENTA" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="35dp"
+                        android:background="#fff" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="4"
+                        android:gravity="center"
+                        android:text="DOCTOR" />
+
+
+                </LinearLayout>
+
+                <androidx.core.widget.NestedScrollView
+                    android:id="@+id/nested"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="12dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </androidx.core.widget.NestedScrollView>
+
+                <Button
+                    android:id="@+id/btnagendarcita"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AGENDAR CITA"
+                    android:layout_marginTop="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/nested" />
+
+                <Button
+                    android:id="@+id/btndescargar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DESCARGAR HISTORIAL (PDF)"
+                    android:textAllCaps="false"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginBottom="18dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnagendarcita"
+                    app:layout_constraintVertical_bias="0.0" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "820224639021",
+    "firebase_url": "https://historiasclinicas-3ffcc.firebaseio.com",
+    "project_id": "historiasclinicas-3ffcc",
+    "storage_bucket": "historiasclinicas-3ffcc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:820224639021:android:e59f67d8e8c615b086f8a4",
+        "android_client_info": {
+          "package_name": "com.example.historiasclinicas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "820224639021-nm1r524ci1eb4c7qrlpb1mjhmk6vqb38.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfQl9YWVVY1GMDtcqzvoX0v2cRKX3KTAY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "820224639021-nm1r524ci1eb4c7qrlpb1mjhmk6vqb38.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

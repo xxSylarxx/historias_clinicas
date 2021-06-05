@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="#757575"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/txtfecha"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:text="24/09/2020\n10:30" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#fff" />
+
+    <TextView
+        android:id="@+id/txtatencion"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:text="A2313" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#fff" />
+
+    <TextView
+        android:id="@+id/txtcuenta"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:text="141" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#fff" />
+
+    <TextView
+        android:id="@+id/txtdoctor"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:layout_weight="4"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:text="Dr Chapatin" />
+
+</LinearLayout>

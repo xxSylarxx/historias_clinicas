@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/linearLayout12"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent=".7">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="FECHA"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txtfecha"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout23"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout12"
+        app:layout_constraintWidth_percent=".7">
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="HORA CiTADA"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txthora"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout43"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout23"
+        app:layout_constraintWidth_percent=".7">
+
+        <TextView
+            android:id="@+id/textView93"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="HORA DIAGNOSTICO"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txthoraD"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtdoctor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Doctor Hidalgo"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout43"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout43" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtdoctor"
+        app:layout_constraintWidth_percent=".8">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="PESO:" />
+
+        <TextView
+            android:id="@+id/txtpeso"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="60" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="TALLA:" />
+
+        <TextView
+            android:id="@+id/txttalla"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout14"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout8"
+        app:layout_constraintWidth_percent=".8">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="TEMP:" />
+
+        <TextView
+            android:id="@+id/txttemperatura"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="60" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="PRESION:" />
+
+        <TextView
+            android:id="@+id/txtpresion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="DX Ingreso (Diagnostico de Ingreso)"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout14"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout14" />
+
+    <TextView
+        android:id="@+id/txtdiagnostico"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintWidth_percent=".8" />
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="RECOMENDACIONES Y RECETAS"
+        app:layout_constraintStart_toStartOf="@+id/txtdiagnostico"
+        app:layout_constraintTop_toBottomOf="@+id/txtdiagnostico" />
+
+    <TextView
+        android:id="@+id/txtrecomendaciones"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/textView1"
+        app:layout_constraintTop_toBottomOf="@+id/textView1"
+        app:layout_constraintWidth_percent=".8" />
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="LABORATORIO"
+        app:layout_constraintStart_toStartOf="@+id/txtrecomendaciones"
+        app:layout_constraintTop_toBottomOf="@+id/txtrecomendaciones" />
+
+    <TextView
+        android:id="@+id/txtlaboratorios"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintWidth_percent=".8" />
+
+    <TextView
+        android:id="@+id/txtradio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="RADIOLOGIA"
+        app:layout_constraintStart_toStartOf="@+id/txtlaboratorios"
+        app:layout_constraintTop_toBottomOf="@+id/txtlaboratorios" />
+
+    <TextView
+        android:id="@+id/txtradiologia"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/txtradio"
+        app:layout_constraintTop_toBottomOf="@+id/txtradio"
+        app:layout_constraintWidth_percent=".8" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="IMAGEN"
+        app:layout_constraintStart_toStartOf="@+id/txtradiologia"
+        app:layout_constraintTop_toBottomOf="@+id/txtradiologia" />
+
+    <ImageView
+        android:id="@+id/txtrayos"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+
+    <View
+        android:id="@+id/separador"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#fff"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtrayos"
+        app:layout_constraintWidth_percent=".8" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

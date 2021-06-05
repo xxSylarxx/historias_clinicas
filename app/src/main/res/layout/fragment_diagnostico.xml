@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Vista.DiagnosticoFragment">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/historial"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/ic_assignment"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/constraintLayout4"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="ATENCIONES MEDICAS"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView6"
+                    app:layout_constraintWidth_percent=".7">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:text="Paciente"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/txtpaciente"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:gravity="center"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/linearLayout10">
+
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:text="EDAD"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/txtedad"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:maxLength="2"
+                            android:gravity="center"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/linearLayout11">
+
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:text="FECHA"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/txtfecha"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_weight="5"
+                            android:gravity="center"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/linearLayout8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout4"
+                    app:layout_constraintWidth_percent=".8">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="PESO:" />
+
+                    <EditText
+                        android:id="@+id/txtpeso"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="60" />
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="TALLA:" />
+
+                    <EditText
+                        android:id="@+id/txttalla"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout14"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout8"
+                    app:layout_constraintWidth_percent=".8">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="TEMP:" />
+
+                    <EditText
+                        android:id="@+id/txttemperatura"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="60" />
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="PRESION:" />
+
+                    <EditText
+                        android:id="@+id/txtpresion"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tempAlert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="@+id/linearLayout14"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout14" />
+
+                <TextView
+                    android:id="@+id/presionAlert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="@+id/linearLayout14"
+                    app:layout_constraintTop_toBottomOf="@+id/tempAlert" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="DX Ingreso (Diagnostico de Ingreso)"
+                    app:layout_constraintStart_toStartOf="@+id/presionAlert"
+                    app:layout_constraintTop_toBottomOf="@+id/presionAlert" />
+
+                <EditText
+                    android:id="@+id/txtdiagnostico"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="@+id/textView"
+                    app:layout_constraintTop_toBottomOf="@+id/textView"
+                    app:layout_constraintWidth_percent=".8" />
+
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="RECOMENDACIONES Y RECETAS"
+                    app:layout_constraintStart_toStartOf="@+id/txtdiagnostico"
+                    app:layout_constraintTop_toBottomOf="@+id/txtdiagnostico" />
+
+                <EditText
+                    android:id="@+id/txtrecomendaciones"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="@+id/textView1"
+                    app:layout_constraintTop_toBottomOf="@+id/textView1"
+                    app:layout_constraintWidth_percent=".8" />
+
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="LABORATORIO"
+                    app:layout_constraintStart_toStartOf="@+id/txtrecomendaciones"
+                    app:layout_constraintTop_toBottomOf="@+id/txtrecomendaciones" />
+
+                <TextView
+                    android:id="@+id/lab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="Especialidad"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="@+id/area"
+                    app:layout_constraintTop_toBottomOf="@+id/spnlaboratorio" />
+
+                <TextView
+                    android:id="@+id/area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Area"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="@+id/textView4"
+                    app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+                <Spinner
+                    android:id="@+id/spnlaboratorio"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:entries="@array/laboratorios"
+                    app:layout_constraintBottom_toBottomOf="@+id/area"
+                    app:layout_constraintStart_toEndOf="@+id/area"
+                    app:layout_constraintTop_toTopOf="@id/area"
+                    app:layout_constraintWidth_percent=".6" />
+
+                <Spinner
+                    android:id="@+id/spnelegido"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@+id/lab"
+                    app:layout_constraintStart_toEndOf="@+id/lab"
+                    app:layout_constraintTop_toTopOf="@+id/lab"
+                    app:layout_constraintWidth_percent=".6" />
+
+                <TextView
+                    android:id="@+id/txtradiografia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="RADIOLOGIA"
+                    app:layout_constraintStart_toStartOf="@+id/lab"
+                    app:layout_constraintTop_toBottomOf="@+id/lab" />
+
+                <TextView
+                    android:id="@+id/areaRadio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Area"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="@+id/txtradiografia"
+                    app:layout_constraintTop_toBottomOf="@+id/txtradiografia" />
+
+                <Spinner
+                    android:id="@+id/spnareRadio"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:entries="@array/radiologia"
+                    app:layout_constraintBottom_toBottomOf="@+id/areaRadio"
+                    app:layout_constraintStart_toEndOf="@+id/areaRadio"
+                    app:layout_constraintTop_toTopOf="@id/areaRadio"
+                    app:layout_constraintWidth_percent=".6" />
+
+                <TextView
+                    android:id="@+id/radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="Especialidad"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="@+id/areaRadio"
+                    app:layout_constraintTop_toBottomOf="@+id/spnareRadio" />
+
+                <Spinner
+                    android:id="@+id/spnelegidoRadio"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@+id/radio"
+                    app:layout_constraintStart_toEndOf="@+id/radio"
+                    app:layout_constraintTop_toTopOf="@+id/radio"
+                    app:layout_constraintWidth_percent=".6" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="IMAGEN"
+                    app:layout_constraintStart_toStartOf="@+id/radio"
+                    app:layout_constraintTop_toBottomOf="@+id/radio" />
+
+                <ImageView
+                    android:id="@+id/txtrayos"
+                    android:layout_width="180dp"
+                    android:layout_height="210dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_baseline_photo_24"
+                    app:layout_constraintStart_toStartOf="@+id/textView14"
+                    app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtrayos">
+
+
+                    <Button
+                        android:id="@+id/btnfinalizar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FINALIZAR ATENCION" />
+
+                </LinearLayout>
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

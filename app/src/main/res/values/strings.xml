@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">HistoriasClinicas</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="aperturar_historia_clinica">APERTURAR HISTORIA CLINICA</string>
+    <string name="nn">NN</string>
+    <string name="nombres">NOMBRES:</string>
+    <string name="apellidos">APELLIDOS:</string>
+    <string name="celular">CELULAR:</string>
+    <string name="dni">DNI:</string>
+    <string name="direccion">DIRECCION:</string>
+    <string name="nombre_padre">NOMBRE PADRE:</string>
+    <string name="nombre_madre">NOMBRE MADRE:</string>
+    <string name="lugar_nacimiento">LUGAR NACIMIENTO:</string>
+    <string name="fecha_nacimiento">FECHA NACIMIENTO:</string>
+    <string name="sexo">SEXO:</string>
+    <string name="f">F</string>
+    <string name="observaciones">OBSERVACIONES:</string>
+    <string name="registrar">REGISTRAR</string>
+    <string name="m">M</string>
+    <string name="espacio"> </string>
+
+
+    <string-array name="departamentos">
+        <item>Amazonas</item>
+        <item>Ancash</item>
+        <item>Apurimac</item>
+        <item>Arequipa</item>
+        <item>Ayacucho</item>
+        <item>Cajamarca</item>
+        <item>Callao</item>
+        <item>Cusco</item>
+        <item>Huancavelica</item>
+        <item>Huanuco</item>
+        <item>Ica</item>
+        <item>Junin</item>
+        <item>La Libertad</item>
+        <item>Lima</item>
+        <item>Loreto</item>
+        <item>Madre De Dios</item>
+        <item>Moquegua</item>
+        <item>Pasco</item>
+        <item>Piura</item>
+        <item>Puno</item>
+        <item>San Martin</item>
+        <item>Tacna</item>
+        <item>Tumbes</item>
+        <item>Ucayali</item>
+    </string-array>
+
+    <string-array name="laboratorios">
+        <item>Selecciona...</item>
+        <item>Bioquimica</item>
+        <item>Bioquimica Orina</item>
+        <item>Fertilidad</item>
+        <item>Hematologia</item>
+        <item>Hemostasia y Trombosis</item>
+        <item>Inmunol. Hormonas</item>
+        <item>Inmunol Hepatica</item>
+        <item>Marcad. Oncologicos</item>
+        <item>Inmulogia</item>
+        <item>Microbiologia</item>
+        <item>Banco de sangre</item>
+        <item>Laboratorio</item>
+    </string-array>
+
+    <string-array name="radiologia">
+        <item>Selecciona...</item>
+        <item>Ecografía Abdominal</item>
+        <item>Ecografía - Varios</item>
+        <item>Radiografía Aparato Digestivo</item>
+        <item>Radiografía - Cabeza y Cuello</item>
+        <item>Radiografía Columna y Pelvis</item>
+        <item>Radiografía extramedades</item>
+        <item>Radiografía, Procedimientos Especiales Invasivos</item>
+    </string-array>
+
+</resources>

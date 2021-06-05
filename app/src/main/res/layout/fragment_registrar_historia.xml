@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/constraintLayout"
+    tools:context=".Vista.RegistrarHistoriaFragment">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtPaciente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paciente: MOLINA MENDEZ, AXEL"
+        android:textSize="16sp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPaciente"
+        app:layout_constraintWidth_percent=".8">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:layout_gravity="center"
+            android:text="FECHA ATENCION:"
+            android:inputType="text"/>
+
+        <TextView
+            android:id="@+id/txtfecha"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:focusable="false"
+            android:gravity="center"
+            android:hint="19/09/2020"
+            android:autofillHints="" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintWidth_percent=".8">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:layout_gravity="center"
+            android:text="HORA ATENCION:" />
+
+        <TextView
+            android:id="@+id/txthora"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:focusable="false"
+            android:gravity="center"
+            android:autofillHints="" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintWidth_percent=".8">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="5"
+            android:text="PESO:" />
+
+        <EditText
+            android:id="@+id/txtpeso"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:autofillHints=""
+            android:hint="Ejm: 72.5"
+            android:inputType="numberDecimal"
+            android:paddingLeft="12dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6"
+        app:layout_constraintWidth_percent=".8">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:layout_gravity="center"
+            android:text="TALLA:" />
+
+        <EditText
+            android:id="@+id/txttalla"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:inputType="numberDecimal"
+            android:hint="Ejm: 1.90"
+            android:paddingLeft="12dp"
+            android:autofillHints="" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout7"
+        app:layout_constraintWidth_percent=".8">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:layout_gravity="center"
+            android:text="PRESION:" />
+
+        <EditText
+            android:id="@+id/txtpresion"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:inputType="numberDecimal"
+            android:paddingLeft="12dp"
+            android:autofillHints="" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/presionAlert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/red"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout9"
+        app:layout_constraintLeft_toLeftOf="@id/linearLayout9"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/presionAlert"
+        app:layout_constraintWidth_percent=".8">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:layout_gravity="center"
+            android:text="TEMPERATURA:" />
+
+        <EditText
+            android:id="@+id/txttemperatura"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:inputType="numberDecimal"
+            android:hint="Ejm: 37"
+            android:paddingLeft="12dp"
+            android:autofillHints="" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/temperaturaAlert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/red"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        app:layout_constraintLeft_toLeftOf="@id/linearLayout4"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout11"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/temperaturaAlert"
+        app:layout_constraintWidth_percent=".8">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="5"
+            android:text="DOCTOR(A):" />
+
+        <Spinner
+            android:id="@+id/spndoctor"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:paddingLeft="12dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnactualizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ACTUALIZAR HISTORIA"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout11" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
